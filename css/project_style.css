@@ -1,0 +1,79 @@
+
+
+#header .nav ul li:nth-child(2) a p{
+    color: #5606FF;
+    font-weight: 700;
+}
+.web{
+    margin-top: 200px;
+}
+.web h1{
+    text-align: center;
+    margin-bottom: 134px;
+}
+.web .lazy .flex{
+    justify-content: space-between;
+}
+.web .lazy div .slide_txt{
+    margin-left: 260px;
+    position: relative;
+}
+.web .lazy div .slide_txt p:nth-child(1){
+    font-size: 14rem;
+    position: absolute;
+    top: 69px;
+    left: -138px;
+    color: rgba(86, 6, 255, 0.3);
+}
+.web .lazy div .slide_txt h1{
+    margin-top: 170px;
+}
+.web .lazy div .slide_txt a{
+    font-size: 1.6rem;
+    display: block;
+}
+.web .lazy div .slide_txt a:nth-of-type(2){
+    margin-top: 25px;
+    font-size: 1.6rem;
+}
+.web .lazy div .slide_txt a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 270px;
+    background-color: #222222;
+    margin-top: 10px;
+}
+.web .lazy div .slide_txt a::before{
+    content:'';
+    display: block;
+}
+.web .lazy div img{
+    width: 777px;
+    margin-right: 144px;
+}
+.web .lazy .slick-dots{
+    display: flex;
+    justify-content: center;
+}
+.web .lazy .slick-dots button{
+    font-size: 0;
+    border: transparent;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(86, 6, 255, 0.2);
+    border-radius: 50%;
+    margin-right: 32px;
+    margin-top: 100px;
+}
+.web .lazy .slick-dots button:nth-of-type(3){
+    margin-right: 0;
+}
+.web .lazy .slick-dots li.slick-active button{
+    background-color: #5606FF;
+}
+
+/************************graphic***********************/
+.graphic h1{
+    margin-top: 200px;
+}
