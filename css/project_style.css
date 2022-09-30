@@ -90,7 +90,7 @@
 }
 .graphic .flex{
     justify-content: space-between;
-    margin: 0 220px;
+    margin: 0 250px;
 }
 .graphic .graphic_img .graphic_left{
     margin-top: 111px;
@@ -103,4 +103,64 @@
     width: 529px;
     margin-bottom: 50px;
 }
-.graphic .graphic_img .graphic_left img:hover
+.graphic .graphic_img .graphic_left a {
+    position: relative;
+}
+.graphic .graphic_img .graphic_left a div{
+    display: none;
+}
+.graphic .graphic_img .graphic_left a:hover div{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    color: #ffffff;
+    text-align: center;
+}
+.graphic .graphic_img .graphic_left a:hover div p:nth-child(1){
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.graphic .graphic_img .graphic_left a:hover div p:nth-child(2){
+    padding-top: 15px;
+}
+
+/**************************팝업***********************/
+
+.pop {
+    width:100%;
+     height:100%; 
+     position:fixed; 
+     left:0; 
+     top:0; 
+     background:rgba(0,0,0, 0.6);
+      z-index:99; 
+      display:none;
+}
+.pop .img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow-y: scroll;
+}
+.pop .img img{
+    display: block;
+    width: 100%;
+}
+.pop .img .btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.pop .img .btn button{
+    border: none;
+    color: #ffffff;
+    font-size: 3rem;
+}
