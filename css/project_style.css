@@ -5,7 +5,7 @@
     font-weight: 700;
 }
 .web{
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .web h1{
     text-align: center;
@@ -18,10 +18,11 @@
     margin-left: 260px;
     position: relative;
 }
-.web .lazy div .slide_txt p:nth-child(1){
+.web .lazy div .slide_txt h2{
     font-size: 14rem;
     position: absolute;
-    top: 69px;
+    font-weight: 500;
+    top: 70px;
     left: -138px;
     color: rgba(86, 6, 255, 0.3);
 }
@@ -31,6 +32,7 @@
 .web .lazy div .slide_txt a{
     font-size: 1.6rem;
     display: block;
+    position: relative;
 }
 .web .lazy div .slide_txt a:nth-of-type(2){
     margin-top: 25px;
@@ -42,12 +44,21 @@
     height: 2px;
     width: 270px;
     background-color: #222222;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .web .lazy div .slide_txt a::before{
-    content:'';
+    content: '';
     display: block;
+    width: 3px;
+    height: 24px;
+    border-right: 2px solid #222222;
+    margin: auto;
+    transform: rotate(322deg);
+    position: absolute;
+    left: 258px;
+    top: 19px;
 }
+
 .web .lazy div img{
     width: 777px;
     margin-right: 144px;
@@ -61,7 +72,7 @@
     border: transparent;
     width: 24px;
     height: 24px;
-    background-color: rgba(86, 6, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     margin-right: 32px;
     margin-top: 100px;
@@ -70,10 +81,26 @@
     margin-right: 0;
 }
 .web .lazy .slick-dots li.slick-active button{
-    background-color: #5606FF;
+    background-color: #000000;
 }
 
 /************************graphic***********************/
 .graphic h1{
     margin-top: 200px;
 }
+.graphic .flex{
+    justify-content: space-between;
+    margin: 0 220px;
+}
+.graphic .graphic_img .graphic_left{
+    margin-top: 111px;
+}
+.graphic .graphic_img .graphic_right{
+    margin-top: 214px;
+}
+.graphic .graphic_img .graphic_left img, .graphic .graphic_img .graphic_right img{
+    display: block;
+    width: 529px;
+    margin-bottom: 50px;
+}
+.graphic .graphic_img .graphic_left img:hover
