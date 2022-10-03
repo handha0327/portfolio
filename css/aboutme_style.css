@@ -2,3 +2,37 @@
     color: #5606FF;
     font-weight: 700;
 }
+
+/***********************images***************************/
+.flex{
+    justify-content: space-evenly
+}
+.img {
+    width: 466px;
+    height: 577px;
+    overflow: hidden;
+    /* margin-left: 150px; */
+    margin-top: 160px;
+}
+.img img{
+    width: 105%;
+    height: auto;
+    transform: translate(-4%, -19%);
+}
+.txt{
+    margin-top: 190px;
+}
+.txt h3{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+}
+.txt p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+.txt div{
+    padding-bottom: 50px;
+}
