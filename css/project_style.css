@@ -4,39 +4,39 @@
     color: #5606FF;
     font-weight: 700;
 }
-.web{
-    margin-top: 150px;
+.web {
+    margin-top: 90px;
 }
-.web h1{
+.web h1 {
     text-align: center;
-    margin-bottom: 134px;
+    margin-bottom: 60px;
 }
-.web .lazy .flex{
-    justify-content: space-between;
+.web .lazy .flex {
+    justify-content: space-around;
 }
-.web .lazy div .slide_txt{
-    margin-left: 260px;
+.web .lazy div .slide_txt {
+    margin-left: 150px;
     position: relative;
 }
-.web .lazy div .slide_txt h2{
-    font-size: 14rem;
+.web .lazy div .slide_txt h2 {
+    font-size: 10rem;
     position: absolute;
     font-weight: 500;
     top: 70px;
     left: -138px;
     color: rgba(86, 6, 255, 0.3);
 }
-.web .lazy div .slide_txt h1{
-    margin-top: 170px;
+.web .lazy div .slide_txt h1 {
+    margin-top: 140px;
 }
-.web .lazy div .slide_txt a{
-    font-size: 1.6rem;
+.web .lazy div .slide_txt a {
+    font-size: 1.3rem;
     display: block;
     position: relative;
 }
-.web .lazy div .slide_txt a:nth-of-type(2){
+.web .lazy div .slide_txt a:nth-of-type(2) {
     margin-top: 25px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 .web .lazy div .slide_txt a::after{
     content: '';
@@ -59,19 +59,22 @@
     top: 19px;
 }
 
-.web .lazy div img{
-    width: 777px;
-    margin-right: 144px;
+.web .lazy div img {
+    width: 45%;
 }
-.web .lazy .slick-dots{
+.web .lazy .slick-dots {
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.web .lazy .slick-dots button{
+.web .lazy .slick-dots button {
     font-size: 0;
     border: transparent;
-    width: 24px;
-    height: 24px;
+    width: 15px;
+    height: 15px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     margin-right: 32px;
@@ -84,51 +87,177 @@
     background-color: #000000;
 }
 
+.web .lazy .slick-prev {
+    font-size: 0;
+    border: none;
+}
+.web .lazy .slick-prev::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #a7a7a7;
+    border-right: 2px solid #a7a7a7;
+    margin: auto;
+    transform: rotate(133deg);
+    translate: (-2px -2px);
+    position: absolute;
+    bottom: -34px;
+    left: 43%;
+}
+.web .lazy .slick-next {
+    font-size: 0;
+    border: none;
+}
+.web .lazy .slick-next::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #a7a7a7;
+    border-right: 2px solid #a7a7a7;
+    margin: auto;
+    transform: rotate(-44deg);
+    translate: (-2px -2px);
+    position: absolute;
+    bottom: -34px;
+    right: 45%;
+}
 /************************graphic***********************/
 .graphic h1{
     margin-top: 200px;
 }
-.graphic .flex{
-    justify-content: space-between;
-    margin: 0 250px;
+.graphic .flex {
+    justify-content: space-around;
+    margin: 0 80px;
 }
+
 .graphic .graphic_img .graphic_left{
     margin-top: 111px;
 }
 .graphic .graphic_img .graphic_right{
     margin-top: 214px;
 }
-.graphic .graphic_img .graphic_left img, .graphic .graphic_img .graphic_right img{
+.graphic .graphic_img .graphic_left img, .graphic .graphic_img .graphic_right img {
     display: block;
-    width: 529px;
+    width: 450px;
     margin-bottom: 50px;
 }
-.graphic .graphic_img .graphic_left a {
+.graphic .graphic_img .graphic_left a, .graphic .graphic_img .graphic_right a {
     position: relative;
 }
-.graphic .graphic_img .graphic_left a div{
+.graphic .graphic_img .graphic_left a div, .graphic .graphic_img .graphic_right a div{
     display: none;
 }
-.graphic .graphic_img .graphic_left a:hover div{
+.graphic .graphic_img .graphic_left a div, .graphic .graphic_img .graphic_right a div{
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0, 0.7);
     color: #ffffff;
     text-align: center;
 }
-.graphic .graphic_img .graphic_left a:hover div p:nth-child(1){
-    font-size: 2.2rem;
+.graphic .graphic_img .graphic_left a div p, .graphic .graphic_img .graphic_right a div p{
+    display: none;
+}
+.graphic .graphic_img .graphic_left a:hover div::after{
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.graphic .graphic_img .graphic_right a:hover div::after{
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.graphic .graphic_img .graphic_left a:hover div p{
+    width: 100%;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.2em;
+    /*margin-top: 50%;*/
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
-.graphic .graphic_img .graphic_left a:hover div p:nth-child(2){
-    padding-top: 15px;
+.graphic .graphic_img .graphic_right a:hover div p{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    /*margin-top: 50%;*/
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
-
+.graphic .graphic_img .graphic_left a:hover div p span{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.graphic .graphic_img .graphic_right a:hover div p span{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+/* .modal > div span{
+    display: block;
+    position: absolute;
+    height: 80%;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+.modal:hover > div span:nth-child(1){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    animation: border_width 0.1s;
+} 
+.modal:hover > div span:nth-child(2){
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    animation: border_height 0.1s;
+} 
+.modal:hover > div span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    animation: border_width 0.2s;
+} 
+.modal:hover > div span:nth-child(4){
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+    animation: border_height 0.3s;
+} 
+@keyframes border_width {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+@keyframes border_height {
+    0% {height: 0%;}
+    100% {height: 100%;}
+} */
 /**************************팝업***********************/
 
 .pop {
@@ -142,6 +271,13 @@
       display:none;
 }
 .pop .img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#pop_up1 .img{
     height: 100%;
     position: absolute;
     left: 50%;
