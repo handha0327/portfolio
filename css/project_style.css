@@ -4,21 +4,21 @@
     color: #5606FF;
     font-weight: 700;
 }
-.web {
-    margin-top: 90px;
+#web {
+    padding-top: 90px;
 }
-.web h1 {
+#web h1 {
     text-align: center;
     margin-bottom: 60px;
 }
-.web .lazy .flex {
+#web .lazy .flex {
     justify-content: space-around;
 }
-.web .lazy div .slide_txt {
+#web .lazy div .slide_txt {
     margin-left: 150px;
     position: relative;
 }
-.web .lazy div .slide_txt h2 {
+#web .lazy div .slide_txt h2 {
     font-size: 10rem;
     position: absolute;
     font-weight: 500;
@@ -26,19 +26,20 @@
     left: -138px;
     color: rgba(86, 6, 255, 0.3);
 }
-.web .lazy div .slide_txt h1 {
+#web .lazy div .slide_txt h1 {
     margin-top: 140px;
 }
-.web .lazy div .slide_txt a {
+#web .lazy div .slide_txt a {
     font-size: 1.3rem;
     display: block;
     position: relative;
+    top: 90px;
 }
-.web .lazy div .slide_txt a:nth-of-type(2) {
+#web .lazy div .slide_txt a:nth-of-type(2) {
     margin-top: 25px;
     font-size: 1.3rem;
 }
-.web .lazy div .slide_txt a::after{
+#web .lazy div .slide_txt a::after{
     content: '';
     display: block;
     height: 2px;
@@ -46,7 +47,7 @@
     background-color: #222222;
     margin-top: 20px;
 }
-.web .lazy div .slide_txt a::before{
+#web .lazy div .slide_txt a::before{
     content: '';
     display: block;
     width: 3px;
@@ -59,10 +60,10 @@
     top: 19px;
 }
 
-.web .lazy div img {
+#web .lazy div img {
     width: 45%;
 }
-.web .lazy .slick-dots {
+#web .lazy .slick-dots {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -70,7 +71,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.web .lazy .slick-dots button {
+#web .lazy .slick-dots button {
     font-size: 0;
     border: transparent;
     width: 15px;
@@ -80,18 +81,18 @@
     margin-right: 32px;
     margin-top: 100px;
 }
-.web .lazy .slick-dots button:nth-of-type(3){
+#web .lazy .slick-dots button:nth-of-type(3){
     margin-right: 0;
 }
-.web .lazy .slick-dots li.slick-active button{
+#web .lazy .slick-dots li.slick-active button{
     background-color: #000000;
 }
 
-.web .lazy .slick-prev {
+#web .lazy .slick-prev {
     font-size: 0;
     border: none;
 }
-.web .lazy .slick-prev::after {
+#web .lazy .slick-prev::after {
     content: '';
     display: block;
     width: 20px;
@@ -105,11 +106,11 @@
     bottom: -34px;
     left: 43%;
 }
-.web .lazy .slick-next {
+#web .lazy .slick-next {
     font-size: 0;
     border: none;
 }
-.web .lazy .slick-next::after {
+#web .lazy .slick-next::after {
     content: '';
     display: block;
     width: 20px;
@@ -124,32 +125,33 @@
     right: 45%;
 }
 /************************graphic***********************/
-.graphic h1{
-    margin-top: 200px;
+#graphic h1{
+    margin-top: 100px;
+    padding-top: 100px;
 }
-.graphic .flex {
+#graphic .flex {
     justify-content: space-around;
     margin: 0 80px;
 }
 
-.graphic .graphic_img .graphic_left{
+#graphic .graphic_img .graphic_left{
     margin-top: 111px;
 }
-.graphic .graphic_img .graphic_right{
+#graphic .graphic_img .graphic_right{
     margin-top: 214px;
 }
-.graphic .graphic_img .graphic_left img, .graphic .graphic_img .graphic_right img {
+#graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
     display: block;
     width: 450px;
     margin-bottom: 50px;
 }
-.graphic .graphic_img .graphic_left a, .graphic .graphic_img .graphic_right a {
+#graphic .graphic_img .graphic_left a, #graphic .graphic_img .graphic_right a {
     position: relative;
 }
-.graphic .graphic_img .graphic_left a div, .graphic .graphic_img .graphic_right a div{
+#graphic .graphic_img .graphic_left a div, #graphic .graphic_img .graphic_right a div{
     display: none;
 }
-.graphic .graphic_img .graphic_left a div, .graphic .graphic_img .graphic_right a div{
+#graphic .graphic_img .graphic_left a div, #graphic .graphic_img .graphic_right a div{
     display: block;
     position: absolute;
     top: 0;
@@ -159,10 +161,10 @@
     color: #ffffff;
     text-align: center;
 }
-.graphic .graphic_img .graphic_left a div p, .graphic .graphic_img .graphic_right a div p{
+#graphic .graphic_img .graphic_left a div p, #graphic .graphic_img .graphic_right a div p{
     display: none;
 }
-.graphic .graphic_img .graphic_left a:hover div::after{
+#graphic .graphic_img .graphic_left a:hover div::after{
     content: '';
     display: block;
     background-color: rgba(0,0,0, 0.7);
@@ -171,7 +173,7 @@
     width: 100%;
     height: 100%;
 }
-.graphic .graphic_img .graphic_right a:hover div::after{
+#graphic .graphic_img .graphic_right a:hover div::after{
     content: '';
     display: block;
     background-color: rgba(0,0,0, 0.7);
@@ -180,7 +182,7 @@
     width: 100%;
     height: 100%;
 }
-.graphic .graphic_img .graphic_left a:hover div p{
+#graphic .graphic_img .graphic_left a:hover div p{
     width: 100%;
     font-size: 1.8rem;
     font-weight: 700;
@@ -193,7 +195,7 @@
     text-align: center;
     transform: translate(-50%, -50%);
 }
-.graphic .graphic_img .graphic_right a:hover div p{
+#graphic .graphic_img .graphic_right a:hover div p{
     width: 100%;
     font-size: 1.8rem;
     font-weight: 700;
@@ -206,11 +208,11 @@
     text-align: center;
     transform: translate(-50%, -50%);
 }
-.graphic .graphic_img .graphic_left a:hover div p span{
+#graphic .graphic_img .graphic_left a:hover div p span{
     font-size: 1.3rem;
     font-weight: 400;
 }
-.graphic .graphic_img .graphic_right a:hover div p span{
+#graphic .graphic_img .graphic_right a:hover div p span{
     font-size: 1.3rem;
     font-weight: 400;
 }
