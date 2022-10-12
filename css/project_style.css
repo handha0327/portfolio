@@ -279,7 +279,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
-#pop_up1 .img{
+#pop_up1 .img, #pop_up12 .img, #pop_up13 .img{
     height: 100%;
     position: absolute;
     left: 50%;
@@ -299,6 +299,6 @@
 }
 .pop .img .btn button{
     border: none;
-    color: #ffffff;
+    color: #222222;
     font-size: 3rem;
 }
