@@ -1,5 +1,9 @@
 
 
+#header .nav ul li:nth-child(2) a p{
+    color: #5606FF;
+    font-weight: 700;
+}
 #web {
     padding-top: 90px;
 }
@@ -7,6 +11,7 @@
     text-align: center;
     margin-bottom: 60px;
 }
+
 #web .lazy .flex {
     justify-content: space-around;
 }
@@ -29,7 +34,6 @@
     font-size: 1.3rem;
     display: block;
     position: relative;
-    top: 90px;
 }
 #web .lazy div .slide_txt a:nth-of-type(2) {
     margin-top: 25px;
@@ -42,6 +46,7 @@
     width: 270px;
     background-color: #222222;
     margin-top: 20px;
+
 }
 #web .lazy div .slide_txt a::before{
     content: '';
@@ -58,6 +63,9 @@
 
 #web .lazy div img {
     width: 45%;
+}
+#web .lazy .mobile div img{
+    width: 35%;
 }
 #web .lazy .slick-dots {
     display: flex;
@@ -127,7 +135,7 @@
 }
 #graphic .flex {
     justify-content: space-around;
-    margin: 0 80px;
+    margin: 0 70px;
 }
 
 #graphic .graphic_img .graphic_left{

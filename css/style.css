@@ -2,17 +2,16 @@ body::-webkit-scrollbar {
     display: none; 
 }
 
-html{
-    background-image: url(../images/background.png);
-}
 #wrap{
     overflow: hidden;
     width: 1920px;
     min-width: 1900px;
+    background-image: url(../images/bg.png);
+    z-index: -99;
 }
 
 .inner {
-    max-width: calc(100% - 200px);
+    max-width: 100%;
     box-sizing: border-box;
 }
 .inner_box {
@@ -22,7 +21,10 @@ html{
     position: relative;
     /* overflow: hidden; */
     height: 850px;
-    margin: 55px;
+    width: 80%;
+    margin: 55px auto;
+    display: flex;
+    align-items: center;
 }
 
 .inner_box > p {
@@ -38,8 +40,16 @@ html{
 
 
 #header {
-    float: right;
-    margin: 50px 70px;
+    width: 80%;
+    height: 100px;
+    position: absolute;
+    top: 35px;
+    right: 200px;
+    z-index: 50;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #section{}
 #footer{}
@@ -58,34 +68,42 @@ h1 {
 }
 
 /*********************header****************************/
-#header .nav {
-    top: 0;
-    right: 0;
+#header p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-left: 20px;
 }
-#header .nav ul li{
-    margin-bottom: 60px;
+#header .nav{
+    vertical-align: middle;
+    margin: auto 0;
+}
+#header .nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#header .nav ul li {
     position: relative;
+    margin-left: 20px;
 }
-#header .nav ul li a img{
-    width: 100px;
+#header .nav ul li a img {
+    width: 40px;
     display: block;
 }
 #header .nav ul li a p{
-    position: absolute;
-    left: 50%;
-    bottom: -33px;
     font-size: 1.2rem;
     text-align: center;
     transform: translateX(-50%);
     color: #000000;
     line-height: 1.2rem;
+    display: none;
 }
-#header .nav ul li:hover a p{
-    background-color: #5606FF;
-    color: #ffffff;
-}
-#header .nav ul li:nth-child(1){
-    margin-top: 150px;
+#header .nav ul li:nth-child(1) a p, #header .nav ul li:nth-child(2) a p{
+    bottom: 30%;
 }
 
 /*********************section****************************/
@@ -113,7 +131,7 @@ h1 {
     position: absolute;
     top: -12px;
     left: 12px;
-    z-index: -50;
+    z-index: -1;
 }
 .inner_box > img{
     position: absolute;
