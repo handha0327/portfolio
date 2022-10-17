@@ -64,9 +64,6 @@
 #web .lazy div img {
     width: 45%;
 }
-#web .lazy .mobile div img{
-    width: 35%;
-}
 #web .lazy .slick-dots {
     display: flex;
     justify-content: center;
@@ -108,7 +105,7 @@
     translate: (-2px -2px);
     position: absolute;
     bottom: -34px;
-    left: 43%;
+    left: 40%;
 }
 #web .lazy .slick-next {
     font-size: 0;
@@ -126,7 +123,7 @@
     translate: (-2px -2px);
     position: absolute;
     bottom: -34px;
-    right: 45%;
+    right: 43%;
 }
 /************************graphic***********************/
 #graphic h1{
@@ -135,7 +132,7 @@
 }
 #graphic .flex {
     justify-content: space-around;
-    margin: 0 70px;
+    margin: 0 30px;
 }
 
 #graphic .graphic_img .graphic_left{
@@ -152,118 +149,82 @@
 #graphic .graphic_img .graphic_left a, #graphic .graphic_img .graphic_right a {
     position: relative;
 }
-#graphic .graphic_img .graphic_left a div, #graphic .graphic_img .graphic_right a div{
-    display: none;
-}
-#graphic .graphic_img .graphic_left a div, #graphic .graphic_img .graphic_right a div{
+#graphic .graphic_img .graphic_left a:hover::after, #graphic .graphic_img .graphic_right a:hover::after{
+    content: '';
     display: block;
+    background-color: rgba(0,0,0, 0.7);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+#graphic .graphic_img .graphic_left a p, #graphic .graphic_img .graphic_right a p {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
     color: #ffffff;
     text-align: center;
+    z-index: 5;
+    transform: translateY(-45%);
 }
-#graphic .graphic_img .graphic_left a div p, #graphic .graphic_img .graphic_right a div p{
-    display: none;
-}
-#graphic .graphic_img .graphic_left a:hover div::after{
+
+/* #graphic .graphic_img .graphic_left a:hover p::after{
     content: '';
     display: block;
     background-color: rgba(0,0,0, 0.7);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-#graphic .graphic_img .graphic_right a:hover div::after{
-    content: '';
-    display: block;
-    background-color: rgba(0,0,0, 0.7);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-#graphic .graphic_img .graphic_left a:hover div p{
-    width: 100%;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    /*margin-top: 50%;*/
-    display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-#graphic .graphic_img .graphic_right a:hover div p{
-    width: 100%;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    /*margin-top: 50%;*/
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-#graphic .graphic_img .graphic_left a:hover div p span{
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-#graphic .graphic_img .graphic_right a:hover div p span{
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-/* .modal > div span{
-    display: block;
-    position: absolute;
-    height: 80%;
     top: 0;
     left: 0;
-    background-color: red;
-}
-.modal:hover > div span:nth-child(1){
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 5px;
-    animation: border_width 0.1s;
-} 
-.modal:hover > div span:nth-child(2){
-    right: 0;
-    top: 0;
-    width: 5px;
     height: 100%;
-    animation: border_height 0.1s;
-} 
-.modal:hover > div span:nth-child(3){
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5px;
-    animation: border_width 0.2s;
-} 
-.modal:hover > div span:nth-child(4){
-    left: 0;
-    bottom: 0;
-    width: 5px;
-    height: 100%;
-    animation: border_height 0.3s;
-} 
-@keyframes border_width {
-    0% {width: 0%;}
-    100% {width: 100%;}
-}
-@keyframes border_height {
-    0% {height: 0%;}
-    100% {height: 100%;}
 } */
+/* #graphic .graphic_img .graphic_right a:hover p::after{
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0, 0.7);
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+#graphic .graphic_img .graphic_left a:hover p{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    /*margin-top: 50%;*/
+    display: block;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); */
+}
+#graphic .graphic_img .graphic_right a:hover p{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    /*margin-top: 50%;*/
+    display: block;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); */
+}
+#graphic .graphic_img .graphic_left a:hover p span{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+#graphic .graphic_img .graphic_right a:hover p span{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
 /**************************팝업***********************/
 
 .pop {
@@ -305,4 +266,128 @@
     border: none;
     color: #222222;
     font-size: 3rem;
+}
+
+
+@media all and (max-width:1467px){
+    #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
+        display: block;
+        width: 400px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+
+@media all and (max-width:1330px){
+    #web .lazy .slick-next {
+        /* font-size: 0;
+        border: none; */
+        margin-top: 70px;
+    }
+    #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
+        display: block;
+        width: 350px;
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+
+@media all and (max-width:1270px){
+    #web h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #web .lazy .flex {
+        display: grid;
+        grid-template-areas: 
+        'area1'
+        'area2';
+        padding-top: 50px;
+    }
+    #web .lazy div .slide_txt {
+        /* margin-left: 150px;
+        position: relative; */
+        grid-area: area2;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #web .lazy div img {
+        width: 50%;
+        margin: 0 auto;
+        grid-area: area1;
+    }
+    #web .lazy div .slide_txt h2 {
+        /* font-size: 9rem;
+        position: absolute;
+        font-weight: 500; */
+        top: -430px;
+        left: -100px;
+        /* color: rgba(86, 6, 255, 0.3); */
+    }
+    #web .lazy div .slide_txt h1 {
+        margin-top: 0px;
+    }
+    #web .lazy .slick-next {
+        margin-top: 0;
+    }
+    #web .lazy .slick-prev::after {
+        /* content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid #a7a7a7;
+        border-right: 2px solid #a7a7a7;
+        margin: auto;
+        transform: rotate(133deg);
+        translate: (-2px -2px);
+        position: absolute; */
+        bottom: 50%;
+        left: 50px;
+    }
+    #web .lazy .slick-next::after {
+        /* content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid #a7a7a7;
+        border-right: 2px solid #a7a7a7;
+        margin: auto;
+        transform: rotate(-44deg);
+        translate: (-2px -2px);
+        position: absolute; */
+        bottom: 50%;
+        right: 50px;
+    }
+    #web .lazy .slick-dots {
+        /* display: flex;
+        justify-content: center;
+        position: absolute; */
+        bottom: -60px;
+        /* left: 50%;
+        transform: translateX(-50%); */
+    }
+    /* #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
+        width: 350px;
+        margin-bottom: 30px;
+    } */
+    /* #graphic .graphic_img .graphic_right {
+        margin-top: 170px;
+    } */
+    
+}
+
+@media all and (max-width:1174px){
+    #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
+        display: block;
+        width: 300px;
+        margin-bottom: 50px;
+    }
 }
