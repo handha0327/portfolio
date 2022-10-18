@@ -492,7 +492,7 @@
     }
     #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
         display: block;
-        width: 70%;
+        width: 60%;
         margin:auto;
     }
     
@@ -506,24 +506,24 @@
         text-align: center;
         z-index: 5;
         transform: translateY(0);
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 1em;
         margin: auto;
 
     }
     #graphic .graphic_img .graphic_left a p span{
-        font-size: 1rem;
+        font-size:0.9rem;
         font-weight: 400;
     }
     #graphic .graphic_img .graphic_right a p span{
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 400;
     }
     
     #graphic .graphic_img .graphic_left a:hover p{
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 1.2em;
         /* margin-top: 50%; */
@@ -531,7 +531,7 @@
     }
     #graphic .graphic_img .graphic_right a:hover p{
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 1.2em;
         /*margin-top: 50%;*/
@@ -543,11 +543,11 @@
         transform: translate(-50%, -50%); */
     }
     #graphic .graphic_img .graphic_left a:hover p span{
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 400;
     }
     #graphic .graphic_img .graphic_right a:hover p span{
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 400;
     }
     

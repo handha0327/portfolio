@@ -134,11 +134,14 @@
         position: relative;
         width: 100%;
     }
+    .intro .txt{
+        height: 100vh;
+    }
     .intro p{
-        /* font-size: 3.9rem;
-        line-height: 1.3em;
+        font-size: 2.5rem;
+        /* line-height: 1.3em;
         text-align: center;
         font-weight: 500; */
-        padding-top: 40%;
+        padding-top: 30vh;
     }
 }
