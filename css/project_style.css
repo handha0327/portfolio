@@ -153,11 +153,10 @@
     width: 100%;
     margin-bottom: 50px;
 }
-#graphic .graphic_img .graphic_left a, #graphic .graphic_img .graphic_right a {
+#graphic .graphic_img .graphic_left .modal, #graphic .graphic_img .graphic_right .modal {
     position: relative;
-    display: block;
 }
-#graphic .graphic_img .graphic_left a:hover::after, #graphic .graphic_img .graphic_right a:hover::after{
+#graphic .graphic_img .graphic_left .modal:hover::after, #graphic .graphic_img .graphic_right .modal:hover::after{
     content: '';
     display: block;
     background-color: rgba(0,0,0, 0.7);
@@ -167,7 +166,7 @@
     width: 100%;
     height: 100%;
 }
-#graphic .graphic_img .graphic_left a p, #graphic .graphic_img .graphic_right a p {
+#graphic .graphic_img .graphic_left .modal p, #graphic .graphic_img .graphic_right .modal p {
     display: none;
     position: absolute;
     top: 50%;
@@ -178,7 +177,7 @@
     z-index: 5;
     transform: translateY(-45%);
 }
-#graphic .graphic_img .graphic_left a:hover p{
+#graphic .graphic_img .graphic_left .modal:hover p{
     width: 100%;
     font-size: 1.8rem;
     font-weight: 700;
@@ -191,7 +190,7 @@
     text-align: center;
     transform: translate(-50%, -50%); */
 }
-#graphic .graphic_img .graphic_right a:hover p{
+#graphic .graphic_img .graphic_right .modal:hover p{
     width: 100%;
     font-size: 1.8rem;
     font-weight: 700;
@@ -204,11 +203,11 @@
     text-align: center;
     transform: translate(-50%, -50%); */
 }
-#graphic .graphic_img .graphic_left a:hover p span{
+#graphic .graphic_img .graphic_left .modal:hover p span{
     font-size: 1.3rem;
     font-weight: 400;
 }
-#graphic .graphic_img .graphic_right a:hover p span{
+#graphic .graphic_img .graphic_right .modal:hover p span{
     font-size: 1.3rem;
     font-weight: 400;
 }
