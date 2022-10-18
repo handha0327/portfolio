@@ -11,8 +11,8 @@ body::-webkit-scrollbar {
     width: 100%;
     max-width: 1530px;
     box-sizing: border-box;
-    margin: 0 auto;
-    padding: 80px 10px;
+    margin: 35px auto;
+    padding: 20px 10px;
     position: relative;
 }
 
@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     position: relative;
     /* overflow: hidden; */
-    height: 800px;
+    height: 850px;
   /*  width: 80%;
     */
     display: flex;
