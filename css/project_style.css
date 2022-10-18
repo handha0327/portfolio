@@ -245,14 +245,14 @@
     display: block;
     width: 100%;
 }
-.pop .img .btn{
+.pop .btn{
     position: fixed;
     top: 20px;
     right: 20px;
 }
-.pop .img .btn button{
+.pop .btn button{
     border: none;
-    color: #222222;
+    color: #ffffff;
     font-size: 3rem;
 }
 
@@ -467,6 +467,7 @@
         width: 100%;
         margin: auto;
         padding-left: 20px;
+        display: none;
     }
     #graphic .graphic_img .graphic_left, #graphic .graphic_img .graphic_right{
         width: 90%;
@@ -492,7 +493,7 @@
     }
     #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
         display: block;
-        width: 60%;
+        width: 90%;
         margin:auto;
     }
     
