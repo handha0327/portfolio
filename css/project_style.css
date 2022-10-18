@@ -554,6 +554,17 @@
 }
 
 @media all and (max-width:450px){
+    #web {
+        padding-top: 50px;
+    }
+    #web .lazy .slick-dots {
+        /* display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -30px; */
+        left: 35%;
+        transform: translateX(0);
+    }
     #graphic{
         margin-bottom: 100px;
     }
