@@ -155,6 +155,7 @@
 }
 #graphic .graphic_img .graphic_left a, #graphic .graphic_img .graphic_right a {
     position: relative;
+    display: block;
 }
 #graphic .graphic_img .graphic_left a:hover::after, #graphic .graphic_img .graphic_right a:hover::after{
     content: '';
