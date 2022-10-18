@@ -173,3 +173,171 @@ h1 {
     background-color: rgba(0,0,0,0.33);
     border-bottom-right-radius: 20px;
 }
+
+
+
+
+
+
+@media all and (max-width:450px){
+    body{
+        background-image: url(../images/bg.png);
+        background-size: cover;
+    }
+    body::-webkit-scrollbar { 
+        display: none; 
+    }
+    
+    #wrap{
+        overflow: hidden;
+        width: 100%;
+        max-width: 1530px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height:969px;
+    
+    }
+    
+    
+    .inner_box {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 0;
+        position: relative;
+        /* overflow: hidden; */
+        height: 100%;
+      /*  width: 80%;
+        */
+        display: block;
+        align-items: center;
+    }
+    
+    .inner_box > p {
+        position: absolute;
+        top: 16px;
+        left: 14PX;
+        z-index: 3;
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    
+    
+    
+    #header {
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        z-index: 50;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #000000;
+        margin: 0 auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .flex{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    
+    
+    /*********************header****************************/
+    #header p{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-top: 40px;
+        margin-left: 30px;
+        display: none;
+    }
+    #header .nav{
+        vertical-align: middle;
+        margin: auto;
+        padding-right: 40px;
+    }
+    #header .nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: start;
+    }
+    
+    #header .nav ul li {
+        position: relative;
+        margin-left: 40px;
+    }
+
+    /*********************section****************************/
+    .inner_box::before{
+        content: '';
+        width: 100%;
+        height: 55px;
+        background-color: #000000;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        z-index: 30;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .inner_box::after{
+        content: '';
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: #111111;
+        border-radius: 20px;
+        /* transform: translate(15px, -15px); */
+        position: absolute;
+        top: -12px;
+        left: 12px;
+        z-index: -1;
+    }
+    .inner_box > img{
+        position: absolute;
+        width: 130px;
+        right: 21px;
+        top: 10px;
+        z-index: 3;
+    }
+    
+    
+    /*********************스크롤 만들기****************************/
+    #project_box{
+        overflow-y: scroll;
+        height: 969px;
+        margin-top: 0px;
+        box-sizing: border-box;
+    }
+    
+    /*********************스크롤커스텀*************************/
+    /* 스크롤바 설정*/
+    .scroll::-webkit-scrollbar{
+        width: 11px;
+    }
+    
+    /* 스크롤바 막대 설정*/
+    .scroll::-webkit-scrollbar-thumb{
+        height: 17%;
+        background-color: #000000;
+        border-radius: 10px;  
+    }
+    
+    /* 스크롤바 뒷 배경 설정*/
+    .scroll::-webkit-scrollbar-track{
+        background-color: rgba(0,0,0,0.33);
+        border-bottom-right-radius: 20px;
+    }
+}
+

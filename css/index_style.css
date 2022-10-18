@@ -29,7 +29,7 @@
     width: 86px;
     position: absolute;
     top: -17px;
-    right: 361px;
+    right: 21%;
     animation: emoji 2.5s infinite ;
 }
 @keyframes emoji{
@@ -83,4 +83,62 @@
     font-size: 1.3rem;
     margin-top: 40px;
     color: #ffffff;
+}
+
+
+@media all and (max-width:1410px){
+    .intro img {
+        width: 86px;
+        position: absolute;
+        top: -17px;
+        right: 17%;
+        animation: emoji 2.5s infinite;
+    }
+}
+
+
+@media all and (max-width:1250px){
+    .intro img {
+        width: 86px;
+        position: absolute;
+        top: -17px;
+        right: 12%;
+        animation: emoji 2.5s infinite;
+    }
+}
+
+
+@media all and (max-width:1000px){
+    .intro img {
+        /* width: 86px;
+        position: absolute;
+        top: -17px;
+        right: 17%;
+        animation: emoji 2.5s infinite; */
+        display: none;
+    }
+    .intro .skill p {
+        font-size: 0.9rem;
+        margin-top: 30px;
+        font-weight: 100;
+        word-spacing: 30px;
+        line-height: 2em;
+        padding: 0 10px;
+    }
+}
+
+@media all and (max-width:450px){
+    .intro {
+        margin-top: 0;
+        margin-bottom: 309px;
+        position: relative;
+        width: 100%;
+    }
+    .intro p{
+        /* font-size: 3.9rem;
+        line-height: 1.3em;
+        text-align: center;
+        font-weight: 500; */
+        padding-top: 50%;
+    }
 }

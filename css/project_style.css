@@ -96,8 +96,8 @@
 #web .lazy .slick-prev::after {
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-bottom: 2px solid #a7a7a7;
     border-right: 2px solid #a7a7a7;
     margin: auto;
@@ -114,8 +114,8 @@
 #web .lazy .slick-next::after {
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-bottom: 2px solid #a7a7a7;
     border-right: 2px solid #a7a7a7;
     margin: auto;
@@ -130,9 +130,16 @@
     margin-top: 100px;
     padding-top: 100px;
 }
-#graphic .flex {
-    justify-content: space-around;
-    margin: 0 30px;
+
+.modal img{
+    width: 100%;
+}
+.modal div{
+    width: 100%;
+}
+#graphic .graphic_img .graphic_left, #graphic .graphic_img .graphic_right{
+    width: 30%;
+    margin: 0 auto;
 }
 
 #graphic .graphic_img .graphic_left{
@@ -143,7 +150,7 @@
 }
 #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
     display: block;
-    width: 450px;
+    width: 100%;
     margin-bottom: 50px;
 }
 #graphic .graphic_img .graphic_left a, #graphic .graphic_img .graphic_right a {
@@ -170,26 +177,6 @@
     z-index: 5;
     transform: translateY(-45%);
 }
-
-/* #graphic .graphic_img .graphic_left a:hover p::after{
-    content: '';
-    display: block;
-    background-color: rgba(0,0,0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
-/* #graphic .graphic_img .graphic_right a:hover p::after{
-    content: '';
-    display: block;
-    background-color: rgba(0,0,0, 0.7);
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
 #graphic .graphic_img .graphic_left a:hover p{
     width: 100%;
     font-size: 1.8rem;
@@ -224,6 +211,7 @@
     font-size: 1.3rem;
     font-weight: 400;
 }
+
 
 /**************************팝업***********************/
 
@@ -269,15 +257,6 @@
 }
 
 
-@media all and (max-width:1467px){
-    #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
-        display: block;
-        width: 400px;
-        margin-bottom: 50px;
-    }
-    
-}
-
 
 @media all and (max-width:1330px){
     #web .lazy .slick-next {
@@ -285,20 +264,14 @@
         border: none; */
         margin-top: 70px;
     }
-    #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
-        display: block;
-        width: 350px;
-        margin-bottom: 50px;
-    }
-
-    
+  
 }
 
 
 @media all and (max-width:1270px){
     #web h1 {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 30px;   
     }
     #web .lazy .flex {
         display: grid;
@@ -313,7 +286,7 @@
         grid-area: area2;
         margin: 0 auto;
         margin-top: 50px;
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -325,12 +298,7 @@
         grid-area: area1;
     }
     #web .lazy div .slide_txt h2 {
-        /* font-size: 9rem;
-        position: absolute;
-        font-weight: 500; */
-        top: -430px;
-        left: -100px;
-        /* color: rgba(86, 6, 255, 0.3); */
+        display: none;
     }
     #web .lazy div .slide_txt h1 {
         margin-top: 0px;
@@ -374,20 +342,223 @@
         /* left: 50%;
         transform: translateX(-50%); */
     }
-    /* #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
-        width: 350px;
+
+    #graphic .graphic_img .graphic_left a:hover p{
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.2em;
+        /* margin-top: 50%; */
+        display: block;
+    }
+    #graphic .graphic_img .graphic_right a:hover p{
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.2em;
+        /*margin-top: 50%;*/
+        display: block;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%); */
+    }
+    #graphic .graphic_img .graphic_left a:hover p span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    #graphic .graphic_img .graphic_right a:hover p span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media all and (max-width:710px){
+    #web .lazy div img {
+        width: 80%;
+        margin: 0 auto;
+        grid-area: area1;
+    }
+    #web .lazy .flex {
+        display: grid;
+        grid-template-areas:
+            'area1'
+            'area2'; 
+       padding-top: 0px;
+    }
+    #web .lazy div .slide_txt {
+        /* grid-area: area2;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100%; */
+        display: block;
+        /* flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around; */
+    }
+    #web .lazy div .slide_txt a {
+        /* font-size: 1.3rem;
+        display: block;
+        position: relative; */
+        text-align: center;
+    }
+    #web .lazy div .slide_txt a::after {
+        /* content: '';
+        display: block;
+        height: 2px;
+        width: 270px;
+        background-color: #222222;
+        margin-top: 20px; */
+        margin: 20px auto 0 auto;
+    }
+    #web .lazy div .slide_txt a::before {
+        /* content: '';
+        display: block;
+        width: 3px;
+        height: 24px;
+        border-right: 2px solid #222222;
+        margin: auto;
+        transform: rotate(322deg);
+        position: absolute; */
+        right: 2px;
+        /* top: 19px; */
+    }
+    #web .lazy .slick-next::after {
+        content: '';
+        display: none;
+        width: 30px;
+        height: 30px;
+        border-bottom: 2px solid #a7a7a7;
+        border-right: 2px solid #a7a7a7;
+        margin: auto;
+        transform: rotate(-44deg);
+        translate: (-2px -2px);
+        position: absolute;
+        bottom: -34px;
+        right: 43%;
+    }
+    #web .lazy .slick-prev::after {
+        content: '';
+        display: none;
+        width: 30px;
+        height: 30px;
+        border-bottom: 2px solid #a7a7a7;
+        border-right: 2px solid #a7a7a7;
+        margin: auto;
+        transform: rotate(133deg);
+        translate: (-2px -2px);
+        position: absolute;
+        bottom: -34px;
+        left: 40%;
+    }
+    #graphic h1 {
+        /* margin-top: 100px;
+        padding-top: 100px; */
+        margin-bottom: 80px;
+    }
+    #graphic .flex{
+        display: block;
+    }
+    .modal img{
+        width: 100%;
+    }
+    .modal div{
+        width: 100%;
+        margin: auto;
+        padding-left: 20px;
+    }
+    #graphic .graphic_img .graphic_left, #graphic .graphic_img .graphic_right{
+        width: 90%;
+        margin: auto;
+    }
+    #graphic .graphic_img .graphic_left a, #graphic .graphic_img .graphic_right a {
+        /* position: relative; */
+        display: flex;
+        justify-content: inherit;
+        flex-wrap: nowrap;
+        flex-direction: row;
         margin-bottom: 30px;
-    } */
-    /* #graphic .graphic_img .graphic_right {
-        margin-top: 170px;
-    } */
+    }
+    #graphic .graphic_img .graphic_left a:hover::after, #graphic .graphic_img .graphic_right a:hover::after{
+        /* content: ''; */
+        display: none;
+        /* background-color: rgba(0,0,0, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; */
+    }
+    #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
+        display: block;
+        width: 70%;
+        margin:auto;
+    }
+    
+    #graphic .graphic_img .graphic_left a p, #graphic .graphic_img .graphic_right a p {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: #000000;
+        text-align: center;
+        z-index: 5;
+        transform: translateY(0);
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1em;
+        margin: auto;
+
+    }
+    #graphic .graphic_img .graphic_left a p span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    #graphic .graphic_img .graphic_right a p span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    #graphic .graphic_img .graphic_left a:hover p{
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2em;
+        /* margin-top: 50%; */
+        display: block;
+    }
+    #graphic .graphic_img .graphic_right a:hover p{
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2em;
+        /*margin-top: 50%;*/
+        display: block;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%); */
+    }
+    #graphic .graphic_img .graphic_left a:hover p span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    #graphic .graphic_img .graphic_right a:hover p span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
     
 }
 
-@media all and (max-width:1174px){
-    #graphic .graphic_img .graphic_left img, #graphic .graphic_img .graphic_right img {
-        display: block;
-        width: 300px;
-        margin-bottom: 50px;
+@media all and (max-width:450px){
+    #graphic{
+        margin-bottom: 100px;
+    }
+    #graphic .graphic_img .graphic_left, #graphic .graphic_img .graphic_right{
+        width: 95%;
+        margin: auto;
     }
 }
