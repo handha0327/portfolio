@@ -628,4 +628,32 @@
         width: 95%;
         margin: auto;
     }
+    #pop_up1 .img, #pop_up12 .img, #pop_up13 .img {
+        height: 100%;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        overflow-y: scroll;
+    }
+    .pop .btn button {
+        border: none;
+        color: #ffffff;
+        font-size: 1.8rem;
+    }
+    .pop .btn {
+        position: fixed;
+        top: 12px;
+        right: 9px;
+    }
+    .pop .img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
 }
