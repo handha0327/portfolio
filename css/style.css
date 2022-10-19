@@ -10,12 +10,11 @@ body::-webkit-scrollbar {
     overflow: hidden;
     width: 100%;
     max-width: 1530px;
+    margin: calc(7vh - 15px) auto;
+    padding: 10px 10px;
     box-sizing: border-box;
-    margin: 35px auto;
-    padding: 20px 10px;
     position: relative;
 }
-
 
 .inner_box {
     background-color: #ffffff;
@@ -23,11 +22,13 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     position: relative;
     /* overflow: hidden; */
-    height: 850px;
-  /*  width: 80%;
-    */
+    height: 86vh;
+    min-height: ;
+    /* width: 80%; */
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    padding-top: 55px;
 }
 
 .inner_box > p {
@@ -146,11 +147,11 @@ padding-left: 20px;
 
 
 /*********************스크롤 만들기****************************/
-#project_box{
+#project_box {
     overflow-y: scroll;
-    height: 812px;
-    margin-top: 38px;
+    /* margin-top: 38px; */
     box-sizing: border-box;
+    height: 100%;
 }
 
 /*********************스크롤커스텀*************************/
