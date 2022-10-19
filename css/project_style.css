@@ -460,6 +460,9 @@
     #graphic .flex{
         display: block;
     }
+    .modal {
+        margin-bottom: 20px;
+    }
     .modal img{
         width: 100%;
     }
