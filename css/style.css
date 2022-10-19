@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
     position: relative;
     /* overflow: hidden; */
     height: 86vh;
-    min-height: 400px;
+    min-height: 500px;
     /* width: 80%; */
     display: flex;
     align-items: center;
