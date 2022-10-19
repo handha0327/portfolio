@@ -428,6 +428,7 @@
         right: 2px;
         /* top: 19px; */
     }
+    
     #web .lazy .slick-next::after {
         content: '';
         display: none;
@@ -573,7 +574,7 @@
     }
     #web h1 {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-size: 2.5rem;
     }
     #web .lazy div .slide_txt h1 {
@@ -620,14 +621,17 @@
         left: 35%;
         transform: translateX(0);
     }
+    #web .lazy .slick-prev,#web .lazy .slick-next{
+        display: none;
+    }
     #graphic{
         margin-bottom: 100px;
         padding-top: 0;
     }
     #graphic h1 {
-        /* margin-top: 100px; */
+        margin-top: 0px;
         padding-top: 50px;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
         font-size: 2.5rem;
     }
     #graphic .graphic_img .graphic_left, #graphic .graphic_img .graphic_right{
