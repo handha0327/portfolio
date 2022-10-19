@@ -5,7 +5,7 @@
     font-weight: 700;
 }
 #web {
-    /* padding-top: 90px; */
+    padding-top: 80px;
 }
 #web h1 {
     text-align: center;
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: -30px;
+    bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -104,8 +104,8 @@
     transform: rotate(133deg);
     translate: (-2px -2px);
     position: absolute;
-    bottom: -34px;
-    left: 40%;
+    bottom: -67px;
+    left: 41%;
 }
 #web .lazy .slick-next {
     font-size: 0;
@@ -122,10 +122,13 @@
     transform: rotate(-44deg);
     translate: (-2px -2px);
     position: absolute;
-    bottom: -34px;
+    bottom: -67px;
     right: 43%;
 }
 /************************graphic***********************/
+#graphic{
+    padding-top:80px;
+}
 #graphic h1{
     margin-top: 100px;
     padding-top: 100px;
@@ -254,6 +257,7 @@
     border: none;
     color: #ffffff;
     font-size: 3rem;
+    height: 54px;
 }
 
 
@@ -558,9 +562,6 @@
 }
 
 @media all and (max-width:450px){
-    #web {
-        padding-top: 50px;
-    }
     #web .lazy div img {
         width: 90%;
         margin: 0 auto;
@@ -616,7 +617,7 @@
         transform: translateX(0);
     }
     #graphic{
-        margin-bottom: 400px;
+        margin-bottom: 200px;
     }
     #graphic h1 {
         margin-top: 150px;
