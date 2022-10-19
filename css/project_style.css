@@ -564,7 +564,7 @@
 
 @media all and (max-width:450px){
     #web {
-        padding-top: 80px;
+        padding-top: 50px;
         margin-bottom: 160px;
     }
     #web .lazy div img {
@@ -622,7 +622,7 @@
         transform: translateX(0);
     }
     #web .lazy .slick-prev,#web .lazy .slick-next{
-        display: none;
+        display: none !important;
     }
     #graphic{
         margin-bottom: 100px;
