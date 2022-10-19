@@ -563,7 +563,7 @@
 
 @media all and (max-width:450px){
     #web {
-        padding-top: 60px;
+        padding-top: 140px;
     }
     #web .lazy div img {
         width: 90%;
