@@ -130,7 +130,7 @@
 @media all and (max-width:450px){
     .intro {
         margin-top: 0;
-        margin-bottom: 309px;
+        margin-bottom: 0;
         position: relative;
         width: 100%;
         height: calc(100vh - 80px);
