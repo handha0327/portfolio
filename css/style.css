@@ -180,8 +180,9 @@ padding-left: 20px;
 
 @media all and (max-width:450px){
     body{
-        background-image: url(../images/bg.png);
+        background-image: none;
         background-size: cover;
+        background-color: #ffffff;
     }
     body::-webkit-scrollbar { 
         display: none; 
@@ -216,7 +217,7 @@ padding-left: 20px;
         border-radius: 0;
         position: relative;
         /* overflow: hidden; */
-        height: 100vh;
+        height: 95vh;
         min-height: 500px;
         /* width: 80%; */
         display: flex;
