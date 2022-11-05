@@ -26,202 +26,327 @@
 
 <body >
 <div id="wrap">
-  <header id="header">
-    <div class="nav">
-      <ul>
-        <li>
-          <a href="index.html">
-            <img src='images/folder.png'>
-            <p>INTRO</p>
-          </a>
-          
-        </li>
-        <li>
-          <a href="project.html">
-            <img src='images/folder.png' alt="폴더">
-            <p>PROJECT</p>
-          </a>
-          
-        </li>
-        <li>
-          <a href="aboutme.html">
-            <img src='images/folder.png' alt="폴더">
-            <p>ABOUT<br>ME</p>
-          </a>
-          
-        </li>
-        <li>
-          <a href="https://open.kakao.com/o/s1h7wrEe">
-            <img src='images/folder.png' alt="폴더">
-            <p>KAKAO<br>TALK</p>
-          </a>      
-        </li>
-      </ul>
-    </div>
-  </header>
   <div class="inner">
     <div class="inner_box">
-    <p>PROJECT</p>
-    <img src="images/button.png" alt="창 버튼">
+      <header id="header">
+        <p>PORTFOLIO</p>
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <img src='images/intro.png' alt="인트로">
+                <p>INTRO</p>
+              </a>
+              
+            </li>
+            <li>
+              <a href="project.html#web">
+                <img src='images/web.png' alt="웹">
+                <p>WEB</p>
+              </a>    
+            </li>
+            <li>
+              <a href="project.html#graphic">
+                <img src='images/graphic.png' alt="그래픽">
+                <p>GRAPHIC</p>
+              </a>    
+            </li>
+            <li>
+              <a href="https://open.kakao.com/o/s1h7wrEe" target="_blank">
+                <img src='images/kakaotalk.png' alt="카카오톡">
+                <p>KAKAO<br>TALK</p>
+              </a>      
+            </li>
+          </ul>
+        </div>
+      </header>
     <div id="project_box" class="scroll">
-      <section class="web">
+      <section id="web">
           <h1>WEB RENEWAL</h1>
-          <section class="lazy slider" data-sizes="50vw">
+          <section class="lazy slider">
               <div>
                   <div class="flex">
                       <div class="slide_txt">
                           <h2>01</h2>
                           <h1>남양유업</h1>
-                          <a href="#">가이드 보러가기</a>
-                          <a href="https://handha0327.github.io/namyang/">사이트 보러가기</a>
+                          <div class="see">
+                            <!--<a href="namyang_guide.html" target="_blank">가이드 보러가기</a>-->
+                            <a href="https://handha0327.github.io/namyang/" target="_blank">사이트 보러가기</a>
+                          </div>  
                       </div>
-                      <img src="images/namyang.jpg">
+                      <img src="images/namyang.jpg" alt="남양유업 사이트">
                   </div>
               </div>
-              <div>
+              <div class="mobile">
                   <div class="flex">
                       <div class="slide_txt">
                           <h2>02</h2>
-                          <h1>1537</h1>
-                          <a href="#">가이드 보러가기</a>
-                          <a href="http://handha0327.cafe24.com/">사이트 보러가기</a>
+                          <h1>다비치마켓</h1>
+                          <div class="see">
+                            <!--<a href="#none">가이드 보러가기</a>-->
+                            <a href="https://www.figma.com/proto/g4l8sEuIDJ7FCSOK8mreFP/%EB%8B%A4%EB%B9%84%EC%B9%98%EB%A7%88%EC%BC%93_%EB%A6%AC%EB%89%B4%EC%96%BC?page-id=0%3A1&node-id=42%3A14&viewport=349%2C520%2C0.13&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1" target="_blank">사이트 보러가기</a>
+                          </div>  
                       </div>
-                      <img src="images/1537.jpg">
+                      <img src="images/davich.jpg" alt="다비치마켓 모바일 앱">
                   </div>
               </div>
               <div>
                   <div class="flex">
                       <div class="slide_txt">
                           <h2>03</h2>
-                          <h1>다비치마켓</h1>
-                          <a href="#">가이드 보러가기</a>
-                          <a href="#">사이트 보러가기</a>
+                          <h1>1537</h1>
+                          <div class="see">
+                            <!--<a href="#none">가이드 보러가기</a>-->
+                            <a href="http://handha0327.cafe24.com/" target="_blank">사이트 보러가기</a>
+                         </div>
                       </div>
-                      <img src="images/namyang.jpg" >
+                      <img src="images/1537.jpg" alt="1537 사이트 메인">
                   </div>
               </div>
             </section>
       </section>
-      <section class="graphic">
-          <h1>GRAPHIC DESIGN</h1>
-          <div class="graphic_img flex">
-            <div class="graphic_left">
-                    <a href="#pop_up1" class="modal">
-                      <img src="images/doringdoring.jpg" alt="도링도링">
-                      <div>
-                        <p>DORING DORING<br>
-                          <span>브랜딩</span></p>
+      <section id="graphic">
+        <h1>GRAPHIC DESIGN</h1>
+        <div class="graphic_img flex">
+          <div class="graphic_left">
+                  <div href="#pop_up1" class="modal">
+                    <img src="images/doringdoring.jpg" alt="도링도링">
+                    <div>
+                      <p>DORING DORING<br>
+                        <span>브랜딩</span></p>
                       </div>
-                    </a>
-                    <a href="#pop_up3" class="modal">
-                      <img src="images/busan.jpg" alt="부산야경투어 배너">
-                      <div>
-                        <p>부산야경투어<br>
-                          <span>SNS 배너</span></p>
-                      </div>
-                    </a>
-                    <a href="#pop_up5" class="modal">
-                      <img src="images/golf.jpg" alt="하나투어 골프여행">
-                      <div>
-                        <p>하나투어 골프여행 패키지<br>
-                          <span>배너</span></p>
-                      </div>
-                    </a>
-                    <a href="#pop_up7" class="modal">
-                      <img src="images/sky.jpg" alt="아트웍">
-                      <div>
-                        <p>하늘<br>
-                          <span>아트웍</span></p>
-                      </div>
-                    </a>
-              </div><!--graphic_left-->
-            <div class="graphic_right">
-                <a href="#pop_up2" class="modal">
-                  <img src="images/macaroon.jpg" alt="마카롱 이벤트 배너">
-                  <div>
-                    <p>마카롱 할인 이벤트<br>
-                      <span>배너</span></p>
                   </div>
-                </a>
-                <a href="#pop_up4" class="modal">
-                  <img src="images/grant.jpg" alt="소상공인 재난지원금">
-                  <div>
-                    <p>소상공인 재난지원금<br>
-                      <span>배너</span></p>
+                  <div href="#pop_up3" class="modal">
+                    <img src="images/busan.jpg" alt="부산야경투어 배너">
+                    <div>
+                      <p>부산야경투어<br>
+                        <span>SNS 배너</span></p>
+                    </div>
                   </div>
-                </a>
-                <a href="#pop_up6" class="modal">
-                  <img src="images/hair.jpg" alt="헤어템 증정">
-                  <div>
-                    <p>헤어템 증정 이벤트<br>
-                      <span>배너</span></p>
+                  <div href="#pop_up12" class="modal">
+                    <img src="images/1537_page1_main.jpg" alt="1537 상세페이지1">
+                    <div>
+                      <p>1537 상세페이지<br>
+                        <span>상세페이지</span></p>
+                    </div>
                   </div>
-                </a>
-                </div><!--graphic_right-->
-          </div><!--graphic_img-->
-          <div id="pop_up1" class="pop">
-            <div class="img">
-              <img src="images/brand_guide.jpg">
-              <img src="images/brand_guide2.jpg">
-              <div class="btn">
-              <button class="close">x</button>
+                  <div href="#pop_up13" class="modal">
+                    <img src="images/1537_page2_main.jpg" alt="1537 상세페이지2">
+                    <div>
+                      <p>1537 상세페이지2<br>
+                        <span>상세페이지</span></p>
+                    </div>
+                  </div>
+            </div><!--graphic_left-->
+          <div class="graphic_right">
+              <div href="#pop_up2" class="modal">
+                <img src="images/macaroon.jpg" alt="마카롱 이벤트 배너">
+                <div>
+                  <p>마카롱 할인 이벤트<br>
+                    <span>배너</span></p>
+                </div>
+              </div>
+              <div href="#pop_up8" class="modal">
+                <img src="images/1537_banner1.jpg" alt="마카롱 이벤트 배너">
+                <div>
+                  <p>1537 신상품<br>
+                    <span>배너</span></p>
+                </div>
+              </div>
+              <div href="#pop_up9" class="modal">
+                <img src="images/1537_banner2.jpg" alt="마카롱 이벤트 배너">
+                <div>
+                  <p>1537 컬렉션<br>
+                    <span>배너</span></p>
+                </div>
+              </div>
+              <div href="#pop_up6" class="modal">
+                <img src="images/hair.jpg" alt="헤어템 증정">
+                <div>
+                  <p>헤어템 증정 이벤트<br>
+                    <span>배너</span></p>
+                </div>
+              </div>
+              <div href="#pop_up15" class="modal">
+                <img src="images/davich_menu.jpg" alt="다비치스템프배너">
+                <div>
+                  <p>다비치 스템프 이벤트<br>
+                    <span>배너</span></p>
+                </div>
+              </div>
+              </div><!--graphic_right-->
+          <div class="graphic_left">
+            <div href="#pop_up10" class="modal">
+              <img src="images/namyang_banner.jpg" alt="남양유업 여름행사 배너">
+              <div>
+                <p>남양유업 여름 행사<br>
+                  <span>배너</span></p>
+              </div>
             </div>
-            </div>
-          </div>
-          <div id="pop_up2" class="pop">
-            <div class="img">
-              <img src="images/macaroon.jpg" alt="마카롱 이벤트 배너">
-              <div class="btn">
-                <button class="close">x</button>
-              </div>
-            </div>    
-          </div><!--pop_up-->
-          <div id="pop_up3" class="pop">
-            <div class="img">
-              <img src="images/busan.jpg" alt="부산야경투어 배너">
-              <div class="btn">
-                <button class="close">x</button>
-              </div>
-            </div>    
-          </div><!--pop_up-->
-          <div id="pop_up4" class="pop">
-            <div class="img">
-              <img src="images/grant.jpg" alt="소상공인 재난지원금">
-              <div class="btn">
-                <button class="close">x</button>
-              </div>
-            </div>    
-          </div><!--pop_up-->
-          <div id="pop_up5" class="pop">
-            <div class="img">
+            <div href="#pop_up5" class="modal">
               <img src="images/golf.jpg" alt="하나투어 골프여행">
-              <div class="btn">
-                <button class="close">x</button>
+              <div>
+                <p>하나투어 골프여행 패키지<br>
+                  <span>배너</span></p>
               </div>
-            </div>    
-          </div><!--pop_up-->
-          <div id="pop_up6" class="pop">
-            <div class="img">
-              <img src="images/hair.jpg" alt="헤어템증정">
-              <div class="btn">
-                <button class="close">x</button>
+            </div>
+            <div href="#pop_up11" class="modal">
+              <img src="images/1537_banner3.jpg" alt="1537행사배너">
+              <div>
+                <p>1537 행사<br>
+                  <span>배너</span></p>
               </div>
-            </div>    
-          </div><!--pop_up-->
-          <div id="pop_up7" class="pop">
-            <div class="img">
-              <img src="images/sky.jpg" alt="아트웍">
-              <div class="btn">
-                <button class="close">x</button>
+            </div>
+            <div href="#pop_up4" class="modal">
+              <img src="images/grant.jpg" alt="소상공인 재난지원금">
+              <div>
+                <p>소상공인 재난지원금<br>
+                  <span>배너</span></p>
               </div>
-            </div>    
-          </div><!--pop_up-->
-          
-      </section>
+            </div>
+            <div href="#pop_up7" class="modal">
+                  <img src="images/sky.jpg" alt="아트웍">
+                  <div>
+                    <p>하늘<br>
+                      <span>아트웍</span></p>
+                  </div>
+            </div>
+            <div href="#pop_up14" class="modal">
+                  <img src="images/davich_main.jpg" alt="다비치룰렛배너">
+                  <div>
+                    <p>다비치 룰렛 이벤트<br>
+                      <span>배너</span></p>
+                  </div>
+            </div>
+          </div><!--graphic_left-->
+        </div><!--graphic_img-->
+        <div id="pop_up1" class="pop">
+          <div class="img">
+            <img src="images/brand_guide.jpg">
+            <img src="images/brand_guide2.jpg">
+          </div>
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div>
+        <div id="pop_up2" class="pop">
+          <div class="img">
+            <img src="images/macaroon.jpg" alt="마카롱 이벤트 배너">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up3" class="pop">
+          <div class="img">
+            <img src="images/busan.jpg" alt="부산야경투어 배너">
+          </div>  
+          <div class="btn">
+            <button class="close">x</button>
+          </div>  
+        </div><!--pop_up-->
+        <div id="pop_up4" class="pop">
+          <div class="img">
+            <img src="images/grant.jpg" alt="소상공인 재난지원금">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up5" class="pop">
+          <div class="img">
+            <img src="images/golf.jpg" alt="하나투어 골프여행">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up6" class="pop">
+          <div class="img">
+            <img src="images/hair.jpg" alt="헤어템증정">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up7" class="pop">
+          <div class="img">
+            <img src="images/sky.jpg" alt="아트웍">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up8" class="pop">
+          <div class="img">
+            <img src="images/1537_banner1.jpg" alt="1537 신상품 배너">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up9" class="pop">
+          <div class="img">
+            <img src="images/1537_banner2.jpg" alt="1537 컬렉션 배너">
+          </div>   
+          <div class="btn">
+            <button class="close">x</button>
+          </div> 
+        </div><!--pop_up-->
+        <div id="pop_up10" class="pop">
+          <div class="img">
+            <img src="images/namyang_banner.jpg" alt="남양유업 여름행사 배너">
+          </div>   
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up11" class="pop">
+          <div class="img">
+            <img src="images/1537_banner3.jpg" alt="1537행사배너">
+          </div>   
+          <div class="btn">
+            <button class="close">x</button>
+          </div> 
+        </div><!--pop_up-->
+        <div id="pop_up12" class="pop">
+          <div class="img">
+            <img src="images/1537_page1.jpg" alt="1537상세페이지1">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up13" class="pop">
+          <div class="img">
+            <img src="images/1537_page2.jpg" alt="1537상세페이지2">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up14" class="pop">
+          <div class="img">
+            <img src="images/davich_main.jpg" alt="다비치룰렛이벤트">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        <div id="pop_up15" class="pop">
+          <div class="img">
+            <img src="images/davich_menu.jpg" alt="다비치스템프이벤트">
+          </div>    
+          <div class="btn">
+            <button class="close">x</button>
+          </div>
+        </div><!--pop_up-->
+        
+    </section>
     </div>
-    </div>
-  </div>
-</div>
+    </div><!--innner_box-->
+  </div><!--inner-->
+</div><!--wrap-->
 
 </body>
 
