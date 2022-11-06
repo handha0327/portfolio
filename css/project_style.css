@@ -69,10 +69,10 @@
 }
 
 #web .slick-active img{
-    animation: 4s web forwards 0.5s;
+    animation: 2s web forwards 0.8s;
 }
 #web .slick-active .slide_txt{
-    animation: 4s web forwards;
+    animation: 2s web forwards 0.5s;
 }
 @keyframes web{
     0% {opacity: 0;}
